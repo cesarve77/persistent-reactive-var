@@ -13,15 +13,13 @@ Package.describe({
 Package.onUse(function (api) {
     api.versionsFrom('1.4.2');
     api.use('ecmascript');
-    api.use('accounts-base', 'client', {weak: true});
-    api.use('amplify', 'client')
+    api.use('amplify@1.0.0', 'client')
     api.mainModule('client.js');
 });
 
 Package.onTest(function (api) {
     api.use('ecmascript');
     api.use('tinytest');
-    api.use('accounts-base', 'client', {weak: true});
     api.use('cesarve:persistent-reactive-var');
     api.mainModule('client.test.js');
 });
