@@ -16,4 +16,6 @@ Tinytest.add('Basic testing', (test) => {
     test.equal(res3.get(), 15);
     test.equal(res3.get(), 15);
      test.equal(res1.get(), 5);
+
+
 });

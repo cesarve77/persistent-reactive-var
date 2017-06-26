@@ -23,11 +23,12 @@ foo= new PersistentReactiveVar(uniqueId: String,defaultValue: Any)
 
 /***
 * set value
-* take one param
+* take 2 params
 * value
+* expire in milliseconds or null for no expire 
 */
-foo.set({foo:'bar'})
-// example foo=set({a:2})
+foo.set({foo:'bar'},expire)
+// example foo=set({a:2},1000*60*60*24)
 
 /***
 * get storaged value
