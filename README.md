@@ -1,4 +1,4 @@
-# Reactive local storage
+# Reactive local storage between tabs
 
 ## Install
 
